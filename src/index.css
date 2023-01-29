@@ -12,11 +12,20 @@ code {
     monospace;
 }
 .item{
-  display: inline-flex;
+  
+  display: flex;
+  flex-direction: column;
   margin: 20px 10px;
+  border: 2px solid whitesmoke;
+  box-shadow: 40px;
 }
 .cart-item .upper-part{
   padding: 0 20px;
+}
+.upper-part>img{
+  height: 150px;
+  width: 120px;
+  border-radius: 5px;
 }
 .cart-item-actions{
   margin-top: 20px;
@@ -26,6 +35,7 @@ code {
   width: 25px;
   margin-right: 10px;
 }
+
 .item-action:hover{
   cursor: pointer;
 }
