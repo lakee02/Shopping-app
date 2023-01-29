@@ -12,12 +12,16 @@ code {
     monospace;
 }
 .item{
-  
+  height: 300px;
+  width: 600px;
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-  margin: 20px 10px;
-  border: 2px solid whitesmoke;
+  /* margin: 20px 10px; */
+  border: 8px solid whitesmoke;
   box-shadow: 40px;
+  border-radius: 8px;
+  margin: 10px;
 }
 .cart-item .upper-part{
   padding: 0 20px;
@@ -36,8 +40,14 @@ code {
   margin-right: 10px;
 }
 
+
 .item-action:hover{
   cursor: pointer;
+}
+.item:hover{
+  z-index:100;
+  width:300px;
+  height:auto;
 }
 .cart{
   display: flex;
